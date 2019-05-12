@@ -91,6 +91,7 @@ if ($pagina==4){
 	echo "<script> window.location='consultaEmpleados.php' </script>";
  }
 
+ 
  //Usuarios
  //Esto se usa para crear usuarios...
 if ($pagina==5){
@@ -215,4 +216,35 @@ if ($pagina==7){
 	//echo "<script> alert('Guardado Exitosamente!!!') </script>";
 	//echo "<script> window.location='horarioprofesor.php' </script>";
 }
+
+//Registrar Asignaturas!!!
+if ($pagina==8){
+
+	$nombre=$_POST["nombre"];
+	$cantidad=$_POST["cantidad"];
+	
+	$conexion->set_charset("utf8");
+
+	$sql = "INSERT INTO asignatura (nombre, cantidad)  VALUES ('$nombre','$cantidad')";
+	$resultado = $conexion->query($sql);
+	
+
+	echo "<script> alert('Guardado Exitosamente!!!') </script>";
+	echo "<script> window.location='registroAsignaturas.php' </script>";
+}
+
+//Modificar Asignaturas!!!
+if ($pagina==9){
+
+    $codigo=$_POST["codigo"];
+    $nombre=$_POST["nombre"];
+	$cantidad=$_POST["cantidad"];
+    
+	$sql = "UPDATE asignatura SET nombre='$nombre', cantidad='$cantidad' WHERE codigo = '$codigo'";
+    $resultado = $conexion->query($sql); 
+
+    echo "<script> alert('Modificado Exitosamente!!!') </script>";
+	echo "<script> window.location='consultaAsignaturas.php' </script>";
+ }
+
 ?>

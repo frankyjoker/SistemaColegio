@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2018 at 09:17 PM
+-- Generation Time: Dec 21, 2018 at 01:14 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -190,7 +190,9 @@ CREATE TABLE `horariosemestral` (
 --
 
 INSERT INTO `horariosemestral` (`codigo`, `codigoprofesor`, `anioescolar`, `cantidadhora`) VALUES
-(1, 1, '', 0);
+(1, 1, '', 0),
+(2, 1, '1', 0),
+(3, 1, '1', 0);
 
 -- --------------------------------------------------------
 
@@ -214,7 +216,8 @@ INSERT INTO `usuario` (`codigo`, `nombre`, `apellido`, `nombreusuario`, `claveus
 (1, 'Wilmer', 'Morillo', 'wilmermorillo', '1234'),
 (2, 'Daniel', 'Sanchez', 'daniel', '1235'),
 (3, 'Jose', 'Cordero', 'jenny', '12'),
-(4, 'Francisco', 'Suarez', 'elpancho', '123');
+(4, 'Francisco', 'Suarez', 'elpancho', '123'),
+(5, 'Ariel ', 'Pereyra ', 'ariel', '1234');
 
 --
 -- Indexes for dumped tables
@@ -312,13 +315,13 @@ ALTER TABLE `horarioprofesor`
 -- AUTO_INCREMENT for table `horariosemestral`
 --
 ALTER TABLE `horariosemestral`
-  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,5 +1,8 @@
-<?php
+<?php  session_start();
 
+if ($_SESSION["acceso"]!=1){
+  header("Location: iniciarsesion.php");
+}
 include("conexion.php");
 
 
