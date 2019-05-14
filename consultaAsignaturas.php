@@ -132,6 +132,7 @@ if ($_SESSION["acceso"]!=1){
         <p><a href="consultaEmpleados.php" class=" btn btn-success">Empleados</a></p>
         <p><a href="horarioprofesor.php" class=" btn btn-success">Horarios</a></p>
         <p><a href="consultaAsignaturas.php" class=" btn btn-success">Asignaturas</a></p>
+        <p><a href="consultaAulas.php" class=" btn btn-success">Aulas</a></p>
       </div>
       <fieldset>
       <div class="container-fluid text-left">

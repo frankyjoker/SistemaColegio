@@ -247,4 +247,32 @@ if ($pagina==9){
 	echo "<script> window.location='consultaAsignaturas.php' </script>";
  }
 
+ //Registrar Aulas!!!
+if ($pagina==10){
+
+	$descripcion=$_POST["descripcion"];
+	
+	$conexion->set_charset("utf8");
+
+	$sql = "INSERT INTO aula (descripcion)  VALUES ('$descripcion')";
+	$resultado = $conexion->query($sql);
+	
+
+	echo "<script> alert('Guardado Exitosamente!!!') </script>";
+	echo "<script> window.location='registroAulas.php' </script>";
+}
+
+//Modificar Asignaturas!!!
+if ($pagina==11){
+
+    $codigo=$_POST["codigo"];
+    $descripcion=$_POST["descripcion"];
+    
+	$sql = "UPDATE aula SET descripcion='$descripcion' WHERE codigo = '$codigo'";
+    $resultado = $conexion->query($sql); 
+
+    echo "<script> alert('Modificado Exitosamente!!!') </script>";
+	echo "<script> window.location='consultaAulas.php' </script>";
+ }
+
 ?>
