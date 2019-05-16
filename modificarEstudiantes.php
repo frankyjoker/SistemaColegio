@@ -209,15 +209,14 @@ include("conexion.php");
     <div class="form-group">
       <label class="col-md-4 control-label" for=""></label>
       <div class="col-md-4">
-        <button id="" name="" class="btn btn-success">Guardar</button>
-        <a href="consultaEstudiantes.php" class="btn btn-primary">Regresar</a>
+        <button id="" name="" class="btn btn-success btn-lg">Guardar</button>
+        <a href="consultaEstudiantes.php" class="btn btn-primary btn-lg">Regresar</a>
       </div>
     </div>
     </form>
     </fieldset>
   
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
+     
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
@@ -231,7 +230,7 @@ include("conexion.php");
 </div>
 
 <footer class="container-fluid text-center">
-   <p> Footer..... </p>
+   <p> Derechos de Autor 2019. Estudiantes de Informatica UASD </p>
 </footer>
 
 </body>
