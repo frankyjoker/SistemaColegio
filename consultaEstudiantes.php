@@ -129,11 +129,11 @@ if ($_SESSION["acceso"]!=1){
     <div class="row content">
       <div class="col-sm-2 sidenav">
       <div class="btn-group-vertical">
-        <a href="consultaEstudiantes.php" class="btn btn-success">Estudiantes</a>
-        <a href="consultaEmpleados.php" class=" btn btn-success">Empleados</a>
-        <a href="horarioprofesor.php" class=" btn btn-success">Horarios</a>
-        <a href="consultaAsignaturas.php" class=" btn btn-success">Asignaturas</a>
-        <a href="consultaAulas.php" class=" btn btn-success">Aulas</a>
+        <a href="consultaEstudiantes.php" class="btn btn-success btn-lg" >Estudiantes</a>
+        <a href="consultaEmpleados.php" class=" btn btn-success btn-lg">Empleados</a>
+        <a href="horarioprofesor.php" class=" btn btn-success btn-lg">Horarios</a>
+        <a href="consultaAsignaturas.php" class=" btn btn-success btn-lg">Asignaturas</a>
+        <a href="consultaAulas.php" class=" btn btn-success btn-lg">Aulas</a>
       </div>
        </div>
       <fieldset>
