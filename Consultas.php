@@ -58,7 +58,53 @@ if ($_SESSION["acceso"]!=1){
       .row.content {height:auto;} 
     }
   </style>
+
+  <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
 </head>
+
+<style>
+.btn-group .button {
+  display: block;
+  
+}
+
+.desc{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-shadow: 2px 1px purple;
+   font-size: 25px;
+}
+h1{
+   
+   font-family: "Times New Roman", Times, serif;
+   text-shadow: 2px 1px purple; 
+   font-size: 50px;
+}
+
+
+</style>
 
 <body>
 <center>
@@ -108,7 +154,7 @@ if ($_SESSION["acceso"]!=1){
       <div class="collapse navbar-collapse" id='cssmenu' id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="Index.php">Inicio</a></li>
-          <li><a href="consultas.php">Consultas</a></li>
+          <li><a href="#">Consultas</a></li>
           <li><a href="#">Reportes</a></li>
           <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
@@ -125,81 +171,55 @@ if ($_SESSION["acceso"]!=1){
     </div>
   </nav>
 
+
   <div class="container-fluid text-center">
-    <div class="row content">
-      <div class="col-sm-2 sidenav">
-        <div class="btn-group-vertical">
-        <a href="consultaEstudiantes.php" class="btn btn-success btn-lg">Estudiantes</a>
-        <a href="consultaEmpleados.php" class=" btn btn-success btn-lg">Empleados</a>
-        <a href="horarioprofesor.php" class=" btn btn-success btn-lg">Horarios</a>
-        <a href="consultaAsignaturas.php" class=" btn btn-success btn-lg">Asignaturas</a>
-        <a href="consultaAulas.php" class=" btn btn-success btn-lg">Aulas</a>
-      </div>
-      </div>
+ 
       <fieldset>
-      <div class="container-fluid text-left">
-        <h1 class="container-fluid text-center">Consulta Asignaturas</h1> <br>
-        <div>
-          <b>Nombre: </b><input type="text" id="campo" name="campo" />
-          <button id="botonBuscar" type="button" class="btn btn-info">Buscar</button>
-        </div>
-        <div class="container-fluid text-right">
-          <a href="registroAsignaturas.php" class="btn btn-primary">Nuevo Registro</a>
-        </div>
-      </div>
-      <div class="container-fluid text-left">
-        <div id="contenedorTabla" ></div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
+      
+        <h1 class="container-fluid text-center">Consultas </h1> <br>
+        
 
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Eliminar Registro</h4>
-        </div>
+   <div class="gallery" aling="Center">
+  <a href="consultaEstudiantes.php">
+    <img src="imagenes/imagenesConsulta/estudiantes.png" alt="Estudiantes" width="600" height="400">
+  </a>
+  <div class="desc">Estudiantes</div>
+</div>
 
-        <div class="modal-body">
-          ¿Desea eliminar este registro?
-        </div>
+<div class="gallery">
+  <a href="consultaEmpleados.php">
+    <img src="imagenes/imagenesConsulta/empleado.png" alt="Empleados" width="600" height="400">
+  </a>
+  <div class="desc">Empleados</div>
+</div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-danger btn-ok">Delete</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <script>
-    
-    $('#confirm-delete').on('show.bs.modal', function (e) {
-      $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+<div class="gallery">
+  <a  href="horarioprofesor.php">
+    <img src="imagenes/imagenesConsulta/horario.png" alt="Horario" width="600" height="400">
+  </a>
+  <div class="desc">Horarios</div>
+</div>
 
-      $('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
-    });
-    
-    $("#botonBuscar").on("click", obtenerDatos);
-    $("#campo").on("keyup", obtenerDatos);
-    
-    obtenerDatos();
-    function obtenerDatos() {
-      $.ajax({
-        url: "obtenerTablaDeAsignaturas.php",
-        method: "POST",
-        data: {
-          campo: $("#campo").val()
-        }
-      }).done(function (tabla) {
-          $("#contenedorTabla").html(tabla);
-        });
-    }
-  </script>
+<div class="gallery">
+  <a href="consultaAsignaturas.php">
+    <img src="imagenes/imagenesConsulta/Asignatura.png" alt="Asignaturas" width="600" height="400">
+  </a>
+  <div class="desc">Asignaturas</div>
+</div>
 
+<div class="gallery">
+  <a href="consultaAulas.php">
+    <img src="imagenes/imagenesConsulta/aula.png" alt="Aula" width="600" height="400">
+  </a>
+  <div class="desc">Aula</div>
+</div>
+     
+     
    </fieldset>
+
+
+</div>
+
+
 </body>
 </html>

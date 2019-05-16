@@ -69,7 +69,7 @@
 h2 {
   font-size: 36px;
   text-align: center;
-    text-shadow: 3px 2px green;
+  text-shadow: 3px 2px green;
 
 }
 
@@ -92,6 +92,15 @@ p {
   font-size: 24px;
 }
 
+Table
+{
+ align: center;
+ font-size: 100px;
+ font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+ text-shadow: 3px 2px blue;
+
+ }
   </style>
 </head>
 <body>
@@ -157,11 +166,19 @@ p {
   </div>
 </nav>
 
+
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
+
+        <Table BORDER=1px blue>
+        <Tr><Td>
+        <MARQUEE> Colegio Fuente del Saber </MARQUEE>
+        </Td></Tr>
+        </Table>
+
       <h1 class="container-fluid text-center">BIENVENIDOS</h1>
       <h2>Misión</h2>
       <p id= "rcorners3">Educar a niños, niñas y jóvenes para que logren su desarrollo integral en las dimensiones individual, social y trascendente,

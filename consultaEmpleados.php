@@ -111,7 +111,7 @@ if ($_SESSION["acceso"]!=1){
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="Index.php">Inicio</a></li>
-        <li><a href="#">Consultas</a></li>
+        <li><a href="consultas.php">Consultas</a></li>
         <li><a href="#">Reportes</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
