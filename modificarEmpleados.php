@@ -55,6 +55,16 @@ include("conexion.php");
       .row.content {height:auto;} 
     }
   </style>
+
+  <style>
+h1 {
+  text-shadow: 3px 2px red;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+</style>
 </head>
 <body>
 
@@ -211,29 +221,28 @@ include("conexion.php");
     <div class="form-group">
       <label class="col-md-4 control-label" for=""></label>
       <div class="col-md-4">
-        <button id="" name="" class="btn btn-success">Guardar</button>
-        <a href="consultaEmpleados.php" class="btn btn-primary">Regresar</a>
+        <button id="" name="" class="btn btn-success btn-lg">Guardar</button>
+        <a href="consultaEmpleados.php" class="btn btn-primary btn-lg">Regresar</a>
       </div>
     </div>
     </form>
     </fieldset>
   
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
-    </div>
+  </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>ADS</p>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-eu.amazon-adsystem.com/e/cm?ref=tf_til&t=dagow-21&m=amazon&o=30&p=8&l=as1&IS1=1&asins=B078MJ4VND&linkId=7806e6aeca4f5bfddc1cebe0d07d3a2a&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr">
+    </iframe>
       </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
+      
     </div>
   </div>
 </div>
 
+
+
 <footer class="container-fluid text-center">
-   <p> Footer..... </p>
+   <p> Derechos de Autor 2019. Estudiantes de Informatica UASD </p>
 </footer>
 
 </body>

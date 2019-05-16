@@ -60,6 +60,39 @@
   
 
   </style>
+
+  <style>
+  h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+    text-shadow: 3px 2px green;
+
+}
+
+h3 {
+  font-size: 12px;
+  text-align: center;
+}
+
+
+p {
+  font-family: "Monospace", Mono, Monospace;
+}
+
+#rcorners3 {
+  border-radius: 15px 50px;
+  border:4px solid blue;
+  padding: 20px; 
+  width: justify;
+  height: justify;  
+  font-size: 24px;
+}
+
+  </style>
 </head>
 <body>
 
@@ -131,20 +164,28 @@
     <div class="col-sm-8 text-left"> 
       <h1 class="container-fluid text-center">BIENVENIDOS</h1>
       <h2>Misión</h2>
-      <p>Educar a niños, niñas y jóvenes para que logren su desarrollo integral en las dimensiones individual, social y trascendente, que les facilite una inserción crítica, creativa y eficiente en la sociedad.</p>
+      <p id= "rcorners3">Educar a niños, niñas y jóvenes para que logren su desarrollo integral en las dimensiones individual, social y trascendente,
+       que les facilite una inserción crítica, creativa y eficiente en la sociedad.</p>
       <h2>Visión</h2>
-      <p>Ser un centro educativo reconocido por la   calidad y la innovación en sus estrategias pedagógicas, el desarrollo   integral de sus estudiantes y las competencias de su personal docente.</p>
+      <p id= "rcorners3">Ser un centro educativo reconocido por la   calidad y
+       la innovación en sus estrategias pedagógicas, el desarrollo   integral de sus estudiantes y las competencias de su personal docente.</p>
       <h2>Valores</h2>
-      <p>-Promover aprendizajes de calidad en niños, niñas y jóvenes para favorecer su desarrollo integral.</p>
-      <p>-Formar en los valores que se explicitan en el Evangelio.</p>
-      <p>-Favorecer la inserción crítica del   alumnado y en la comunidad local, nacional e  internacional, aportando   al desarrollo y transformación de la misma.</p>
-      <p>-Facilitar la formación y actualización permanente del profesorado en las áreas de su especialidad.</p>
-      <p>-Promover la integración escuela – familia para la educación del estudiantado.</p>
-      <p>-Desarrollar la identidad personal y social de los y las estudiantes. </p>
+      <p id= "rcorners3">-Promover aprendizajes de calidad en niños, niñas y jóvenes para favorecer su desarrollo integral.<br>
+        -Formar en los valores que se explicitan en el Evangelio.<br>
+        -Favorecer la inserción crítica del   alumnado y en la comunidad local, nacional e  internacional,
+         aportando   al desarrollo y transformación de la misma.<br>
+        -Facilitar la formación y actualización permanente del profesorado en las áreas de su especialidad.<br>
+        -Promover la integración escuela – familia para la educación del estudiantado.<br>
+        -Desarrollar la identidad personal y social de los y las estudiantes. </p>
       <hr>
     </div>
   </div>
 </div>
+
+
+<footer class="container-fluid text-center">
+   <h3 class= "center"> Derechos de Autor 2019. Estudiantes de Informatica UASD </h3>
+</footer>
 
 </body>
 </html>
