@@ -25,6 +25,7 @@ if ($_SESSION["acceso"]!=1){
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/stilo.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -108,8 +109,8 @@ if ($_SESSION["acceso"]!=1){
       <div class="collapse navbar-collapse" id='cssmenu' id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="Index.php">Inicio</a></li>
-          <li><a href="consultas.php">Consultas</a></li>
-          <li><a href="#">Reportes</a></li>
+          <li class='has-sub'><a href="Consultas.php"><img width= "25" height="25" src="Imagenes/img/list.png" ><span>  Consultas</span></a>    </li>
+          <li><a href="#"><img width= "25" height="25" src="Imagenes/img/note.png" ><span>  Reporte</span></a></li>
           <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -125,15 +126,19 @@ if ($_SESSION["acceso"]!=1){
     </div>
   </nav>
 
+  
+
   <div class="container-fluid text-center">
     <div class="row content">
       <div class="col-sm-2 sidenav">
       <div class="btn-group-vertical">
-        <a href="consultaEstudiantes.php" class="btn btn-success btn-lg" >Estudiantes</a>
-        <a href="consultaEmpleados.php" class=" btn btn-success btn-lg">Empleados</a>
-        <a href="horarioprofesor.php" class=" btn btn-success btn-lg">Horarios</a>
+        <a href="consultaEstudiantes.php" class="btn btn-success btn-lg" ><img width= "25" height="25" src="imagenes/imagenes/estudiante.png" >Estudiantes</a>
+        <a href="consultaEmpleados.php" class=" btn btn-success btn-lg"><img width= "25" height="25" src="imagenes/imagenes/profesor.png" >Empleados</a>
+        <a href="horarioprofesor.php" class=" btn btn-success btn-lg"><img width= "25" height="25" src="imagenes/img/clock.png" >Horarios</a>
         <a href="consultaAsignaturas.php" class=" btn btn-success btn-lg">Asignaturas</a>
         <a href="consultaAulas.php" class=" btn btn-success btn-lg">Aulas</a>
+
+        
       </div>
        </div>
       <fieldset>
@@ -141,10 +146,10 @@ if ($_SESSION["acceso"]!=1){
         <h1 class="container-fluid text-center">Consulta Estudiantes</h1> <br>
         <div>
           <b>Nombre o Apellido: </b><input type="text" id="campo" name="campo" />
-          <button id="botonBuscar" type="button" class="btn btn-info">Buscar</button>
+          <button id="botonBuscar" type="button" class="btn btn-info"><img width= "30" height="30" src="Imagenes/img/lupa.jpg" ></button>
         </div>
         <div class="container-fluid text-right">
-          <a href="registroEstudiantes.php" class="btn btn-primary">Nuevo Registro</a>
+          <a href="registroEstudiantes.php" class="btn btn-primary"><img width= "25" height="25" src="Imagenes/img/register.png" ><span>Nuevo Registro</span></a>
         </div>
       </div>
       <div class="container-fluid text-left">
