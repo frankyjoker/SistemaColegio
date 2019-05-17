@@ -156,22 +156,22 @@ include("conexion.php");
     </form>
     </fieldset>
   
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>ADS</p>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-eu.amazon-adsystem.com/e/cm?ref=tf_til&t=dagow-21&m=amazon&o=30&p=8&l=as1&IS1=1&asins=B078MJ4VND&linkId=7806e6aeca4f5bfddc1cebe0d07d3a2a&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr">
+    </iframe>
       </div>
       <div class="well">
-        <p>ADS</p>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-eu.amazon-adsystem.com/e/cm?ref=tf_til&t=dagow-21&m=amazon&o=30&p=8&l=as1&IS1=1&asins=B073JYVKNX&linkId=f2a511c41c3453232d0e2aec9ce3591e&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr">
+    </iframe>
       </div>
     </div>
   </div>
 </div>
 
 <footer class="container-fluid text-center">
-   <p> Footer..... </p>
+   <p> Derechos de Autor 2019. Estudiantes de Informatica UASD </p>
 </footer>
 
 </body>
