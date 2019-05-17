@@ -171,7 +171,7 @@ include("conexion.php");
 </div>
 
 <footer class="container-fluid text-center">
-   <p> Derechos de Autor 2019. Estudiantes de Informatica UASD </p>
+   <p> Derechos de Autor 2019. Estudiantes de Informatica UASD... </p>
 </footer>
 
 </body>
