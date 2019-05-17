@@ -117,7 +117,7 @@
       <div class="collapse navbar-collapse" id='cssmenu' id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="Index.php">Inicio</a></li>
-          <li><a href="#">Consultas</a></li>
+          <li><a href="Consultas.php">Consultas</a></li>
           <li><a href="#">Reportes</a></li>
           <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>

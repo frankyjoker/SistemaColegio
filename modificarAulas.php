@@ -53,6 +53,22 @@ include("conexion.php");
         padding: 15px;
       }
       .row.content {height:auto;} 
+       
+       h1 {
+          font-size: 40px;
+        }
+
+        h2 {
+          font-size: 36px;
+          text-align: center;
+          text-shadow: 3px 2px green;
+
+        }
+
+        h3 {
+          font-size: 12px;
+          text-align: center;
+        }
     }
   </style>
 </head>
@@ -171,7 +187,7 @@ include("conexion.php");
 </div>
 
 <footer class="container-fluid text-center">
-   <p> Footer..... </p>
+   <h3 class= "center"> Derechos de Autor 2019. Estudiantes de Informatica UASD </h3>
 </footer>
 
 </body>

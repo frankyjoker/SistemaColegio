@@ -173,7 +173,7 @@ Table
     </div>
     <div class="col-sm-8 text-left"> 
 
-        <Table BORDER=1px blue>
+        <Table BORDER=2px blue>
         <Tr><Td>
         <MARQUEE> Colegio Fuente del Saber </MARQUEE>
         </Td></Tr>

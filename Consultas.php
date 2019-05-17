@@ -14,6 +14,7 @@ if ($_SESSION["acceso"]!=1){
 	$sql = "SELECT * FROM estudiante $where";
   $resultado = $conexion->query( $sql);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,9 +45,13 @@ if ($_SESSION["acceso"]!=1){
     
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
+     position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #555;
+   color: white;
+   text-align: center;
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -60,6 +65,10 @@ if ($_SESSION["acceso"]!=1){
   </style>
 
   <style>
+
+  h3 {
+  font-size: 12px;
+}
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -86,9 +95,10 @@ div.desc {
 
 <style>
 .btn-group .button {
-  display: block;
-  
+  display: block; 
 }
+
+
 
 .desc{
   font-family: "Times New Roman", Times, serif;
@@ -102,7 +112,7 @@ h1{
    text-shadow: 2px 1px purple; 
    font-size: 50px;
 }
-
+ 
 
 </style>
 
@@ -144,6 +154,7 @@ h1{
 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
+    
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -176,7 +187,7 @@ h1{
  
       <fieldset>
       
-        <h1 class="container-fluid text-center">Consultas </h1> <br>
+        <h1 class="container-fluid text-center">Consultas </h1>
         
 
    <div class="gallery" aling="Center">
@@ -185,6 +196,7 @@ h1{
   </a>
   <div class="desc">Estudiantes</div>
 </div>
+
 
 <div class="gallery">
   <a href="consultaEmpleados.php">
@@ -215,11 +227,17 @@ h1{
 </div>
      
      
+     
    </fieldset>
 
 
 </div>
 
+
+
+<footer class="container-fluid text-center">
+   <h3 class= "center"> Derechos de Autor 2019. Estudiantes de Informatica UASD </h3>
+</footer>
 
 </body>
 </html>
