@@ -118,8 +118,8 @@ if ($_SESSION["acceso"]!=1){
           <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img width= "25" height="25" src="Imagenes/img/usuario.png" >Usuarios <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="crearusuario.php">Nuevo Usuario</a></li>
-            <li><a href="cambiarclave.php">Cambiar Contraseña</a></li>
+            <li><a href="crearusuario.php"><img width= "25" height="25" src="Imagenes/imagenes/crearusuario.png" > Nuevo Usuario</a></li>
+            <li><a href="cambiarclave.php"><img width= "25" height="25" src="Imagenes/imagenes/cambiarclave.png" > Cambiar Contraseña</a></li>
           </ul>
        </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -150,7 +150,8 @@ if ($_SESSION["acceso"]!=1){
         <h1 class="container-fluid text-center">Consulta Estudiantes</h1> <br>
         <div>
           <b>Nombre o Apellido: </b><input type="text" id="campo" name="campo" />
-          <button id="botonBuscar" type="button" class="btn btn-info"><img width= "30" height="30" src="Imagenes/img/lupa.jpg" ></button>
+          <button  type="reset" ><img width= "25" height="25" src="Imagenes/img/eliminar.png" ></button>
+          <button  type="button"><img width= "25" height="25" src="Imagenes/img/lupa.jpg" ></button>
         </div>
         <div class="container-fluid text-right">
           <a href="registroEstudiantes.php" class="btn btn-primary"><img width= "25" height="25" src="Imagenes/img/register.png" ><span>Nuevo Registro</span></a>
