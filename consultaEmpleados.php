@@ -145,7 +145,7 @@ if ($_SESSION["acceso"]!=1){
 				<form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
 					<b>Nombre o Apellido: </b><input type="text" id="campo" name="campo" />
           <button  type="reset" ><img width= "25" height="25" src="Imagenes/img/eliminar.png" ></button>
-          <button  type="buscar" "><img width= "25" height="25" src="Imagenes/img/lupa.jpg" ></button>
+          <button  type="buscar"><img width= "25" height="25" src="Imagenes/img/lupa.jpg" ></button>
 				</form>  
         <div class="container-fluid text-right">
            <a href="registroEmpleados.php" class="btn btn-primary"><img width= "25" height="25" src="Imagenes/img/register.png" > Nuevo Registro</a>

@@ -148,11 +148,11 @@ if ($_SESSION["acceso"]!=1){
       <fieldset>
       <div class="container-fluid text-left">
         <h1 class="container-fluid text-center">Consulta Estudiantes</h1> <br>
-        <div>
+        <form>
           <b>Nombre o Apellido: </b><input type="text" id="campo" name="campo" />
           <button  type="reset" ><img width= "25" height="25" src="Imagenes/img/eliminar.png" ></button>
-          <button  type="button"><img width= "25" height="25" src="Imagenes/img/lupa.jpg" ></button>
-        </div>
+          <button  type="buscar"><img width= "25" height="25" src="Imagenes/img/lupa.jpg" ></button>
+  </form>
         <div class="container-fluid text-right">
           <a href="registroEstudiantes.php" class="btn btn-primary"><img width= "25" height="25" src="Imagenes/img/register.png" ><span>Nuevo Registro</span></a>
         </div>
