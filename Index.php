@@ -155,7 +155,7 @@ Table
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="Index.php">Inicio</a></li>
+        <li><a href="Index.php"><img width= "30" height="30" src="Imagenes/img/inicio.jpg" > </a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
       
