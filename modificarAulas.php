@@ -23,6 +23,18 @@ include("conexion.php");
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+
+     footer {
+    
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #555;
+   color: white;
+   text-align: center;
+    }
+    
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -53,23 +65,9 @@ include("conexion.php");
         padding: 15px;
       }
       .row.content {height:auto;} 
-       
-       h1 {
-          font-size: 40px;
-        }
-
-        h2 {
-          font-size: 36px;
-          text-align: center;
-          text-shadow: 3px 2px green;
-
-        }
-
-        h3 {
-          font-size: 12px;
-          text-align: center;
-        }
-    }
+    
+   
+    
   </style>
 </head>
 <body>
@@ -172,19 +170,20 @@ include("conexion.php");
     </form>
     </fieldset>
   
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>ADS</p>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-eu.amazon-adsystem.com/e/cm?ref=tf_til&t=dagow-21&m=amazon&o=30&p=8&l=as1&IS1=1&asins=B078MJ4VND&linkId=7806e6aeca4f5bfddc1cebe0d07d3a2a&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr">
+    </iframe>
       </div>
       <div class="well">
-        <p>ADS</p>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-eu.amazon-adsystem.com/e/cm?ref=tf_til&t=dagow-21&m=amazon&o=30&p=8&l=as1&IS1=1&asins=B073JYVKNX&linkId=f2a511c41c3453232d0e2aec9ce3591e&bc1=FFFFFF&lt1=_top&fc1=333333&lc1=0066C0&bg1=FFFFFF&f=ifr">
+    </iframe>
       </div>
     </div>
   </div>
 </div>
+
 
 <footer class="container-fluid text-center">
    <h3 class= "center"> Derechos de Autor 2019. Estudiantes de Informatica UASD </h3>
