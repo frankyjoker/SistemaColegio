@@ -9,7 +9,7 @@
   if(isset($_SESSION["codigousuario"])){
     
 
-    header("Location: consultaEstudiantes.php");
+    header("Location: inicio.php");
   }
   
   if(!empty($_POST))
@@ -26,7 +26,7 @@
       session_start();
       $_SESSION['codigousuario'] = $row['codigo'];
       $_SESSION["acceso"] = 1;
-      header("location: consultaEstudiantes.php");
+      header("location: inicio.php");
       } else {
       echo "<script> alert('El Usuario o La Contraseña NO estan digitados correctamente!!!') </script>";
     }

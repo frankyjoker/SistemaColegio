@@ -1,25 +1,8 @@
-<?php  session_start();
-
-include("conexion.php");
-
-if ($_SESSION["acceso"]!=1){
-  header("Location: iniciarsesion.php");
-}
-
-	$where = "";
-	
-	if( isset( $_POST['campo'] ) && !empty( $_POST['campo'] ) ) {
-		$where = "WHERE nombre LIKE '%" . $_POST['campo'] . "%' OR nombre LIKE '%" . $_POST['campo'] . "%'";
-	}
-	$sql = "SELECT * FROM estudiante $where";
-  $resultado = $conexion->query( $sql);
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8">
 
 <head>
-  <title>FUENTE DEL SABER</title>
+  <title>Inicio</title>
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="shortcut icon" type="image/x-icon" href="imagenes/colegio.png" />
   <meta charset="utf-8">
@@ -165,8 +148,8 @@ h1{
       </div>
       <div class="collapse navbar-collapse" id='cssmenu' id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="inicio.php">Inicio</a></li>
-          <li><a href="#">Consultas</a></li>
+          <li><a href="Inicio.php">Inicio</a></li>
+          <li><a href="consultas.php">Consultas</a></li>
           <li><a href="#">Reportes</a></li>
           <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
@@ -182,60 +165,30 @@ h1{
       </div>
     </div>
   </nav>
-</div>
 
 
-</div>
 
-  <div class="container-carru">
+    <h2>Colegio Fuente del Saber</h2>
+    <div class="content-all">
+        <div class="content-carrousel">
+            <figure><img src="1.jpg" ></figure>
+            <figure><a title="Estudiantes" href="ConsultaEstudiantes.php"><img src="2.jpg"></a></figure>
+            <figure><img src="3.jpg" ></figure>
+            <figure><img src="4.jpg" ></figure>
+            <figure><img src="5.jpg" ></figure>
+            <figure><img src="6.jpg" ></figure>
+            <figure><img src="7.jpg" ></figure>
+            <figure><img src="8.jpg" ></figure>
+            <figure><img src="9.jpg" ></figure>
+            <figure><img src="10.jpg"></figure>
+        </div>
+
+    </div>
+
+
+
+
  
-      <fieldset>
-      
-            <h1 class="container-fluid text-center">Consultas </h1>
-            
-
-      <div class="gallery" aling="Center">
-      <a href="consultaEstudiantes.php">
-        <img src="imagenes/imagenesConsulta/estudiantes.png" alt="Estudiantes" width="600" height="400">
-      </a>
-      <div class="desc">Estudiantes</div>
-    </div>
-
-
-    <div class="gallery">
-      <a href="consultaEmpleados.php">
-        <img src="imagenes/imagenesConsulta/empleado.png" alt="Empleados" width="600" height="400">
-      </a>
-      <div class="desc">Empleados</div>
-    </div>
-
-    <div class="gallery">
-      <a  href="horarioprofesor.php">
-        <img src="imagenes/imagenesConsulta/horario.png" alt="Horario" width="600" height="400">
-      </a>
-      <div class="desc">Horarios</div>
-    </div>
-
-    <div class="gallery">
-      <a href="consultaAsignaturas.php">
-        <img src="imagenes/imagenesConsulta/Asignatura.png" alt="Asignaturas" width="600" height="400">
-      </a>
-      <div class="desc">Asignaturas</div>
-    </div>
-
-    <div class="gallery">
-      <a href="consultaAulas.php">
-        <img src="imagenes/imagenesConsulta/aula.png" alt="Aula" width="600" height="400">
-      </a>
-      <div class="desc">Aula</div>
-    </div>
-        
-        
-        
-      </fieldset>
-
-
-</div>
 
 
 
