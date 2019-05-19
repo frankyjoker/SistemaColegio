@@ -143,8 +143,8 @@
       </div>
       <div class="collapse navbar-collapse" id='cssmenu' id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="Index.php">Inicio</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="Index.php"><img width="30" height="30" src="imagenes/img/inicio.jpg"> Inicio</a></li>
+          <li><a href="#"> Contacto</a></li>
        </ul>
         </div>
       </div>
