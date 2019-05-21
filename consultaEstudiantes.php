@@ -209,5 +209,7 @@ if ($_SESSION["acceso"]!=1){
     }
   </script>
    </fieldset>
+
+   
 </body>
 </html>

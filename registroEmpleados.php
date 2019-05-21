@@ -85,40 +85,7 @@ if ($_SESSION["acceso"]!=1){
               </div>
             </center>
 
-<center>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-              
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="imagenes/one.jpg" alt="Niños" width="40%" height="40%">
-                  </div>
-              
-                  <div class="item">
-                    <img src="imagenes/dos.jpg" alt="Niños" width="40%" height="40%">
-                  </div>
-              
-                  <div class="item">
-                    <img src="imagenes/tres.jpg" alt="Niños" width="40%" height="40%">
-                  </div>
-              
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </center>
+
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -131,14 +98,14 @@ if ($_SESSION["acceso"]!=1){
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="Index.php">Inicio</a></li>
-        <li><a href="#">Consultas</a></li>
-        <li><a href="#">Reportes</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+         <li><a href="Index.php"><img width= "30" height="30" src="Imagenes/img/inicio.jpg" > </a></li>
+          <li class='has-sub'><a href="Consultas.php"><img width= "25" height="25" src="Imagenes/img/list.png" ><span>  Consultas</span></a>    </li>
+          <li><a href="#"><img width= "25" height="25" src="Imagenes/img/note.png" ><span>  Reporte</span></a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img width= "25" height="25" src="Imagenes/img/usuario.png" >Usuarios <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="crearusuario.php">Nuevo Usuario</a></li>
-            <li><a href="cambiarclave.php">Cambiar Contraseña</a></li>
+            <li><a href="crearusuario.php"><img width= "25" height="25" src="Imagenes/imagenes/crearusuario.png" > Nuevo Usuario</a></li>
+            <li><a href="cambiarclave.php"><img width= "25" height="25" src="Imagenes/imagenes/cambiarclave.png" > Cambiar Contraseña</a></li>
           </ul>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -240,18 +207,18 @@ if ($_SESSION["acceso"]!=1){
     </form>
     </div>
     <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
+      <div >
+        
       </div>
-      <div class="well">
-        <p>ADS</p>
+      <div >
+        
       </div>
     </div>
   </div>
 </div>
 
 <footer class="container-fluid text-center">
-   <p> Footer..... </p>
+   <h3 class= "center"> Derechos de Autor 2019. Estudiantes de Informatica UASD </h3>
 </footer>
 
 </body>

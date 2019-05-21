@@ -145,7 +145,7 @@ if ($_SESSION["acceso"]!=1){
           <button  type="buscar" ><img whith="25" height="25" src="Imagenes/img/lupa.jpg"></button>
         </form>
         <div class="container-fluid text-right">
-          <a href="registroAulas.php" class="btn btn-primary"><img width="25" height="25" src="Imagenes/img/register.png"> Registro</a>
+          <a href="registroAulas.php" class="btn btn-primary"><img width="25" height="25" src="Imagenes/img/register.png"> Nuevo Registro</a>
         </div>
       </div>
       <div class="container-fluid text-left">
@@ -200,5 +200,10 @@ if ($_SESSION["acceso"]!=1){
     }
   </script>
    </fieldset>
+
+<footer class="container-fluid text-center">
+   <h3 class= "center"> Derechos de Autor 2019. Estudiantes de Informatica UASD </h3>
+</footer>
+
 </body>
 </html>
