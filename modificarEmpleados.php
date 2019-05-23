@@ -114,14 +114,14 @@ p {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="Index.php">Inicio</a></li>
-        <li><a href="#">Consultas</a></li>
-        <li><a href="#">Reportes</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+      <li><a href="Index.php"> <img whith="30" height="30" src="Imagenes/img/inicio.jpg"></a></li>
+          <li><a href="consultas.php"><img whith="25" height="25" src="Imagenes/img/list.png"> Consulta</a></li>
+          <li><a href="#"><img whith="25" height="25" src="Imagenes/img/note.png">Reportes</a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img whith="25" height="25" src="Imagenes/img/usuario.png">Usuarios <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="crearusuario.php">Nuevo Usuario</a></li>
-            <li><a href="cambiarclave.php">Cambiar Contraseña</a></li>
+            <li><a href="crearusuario.php"><img whith="25" height="25" src="Imagenes/imagenes/crearusuario.png">Nuevo Usuario</a></li>
+            <li><a href="cambiarclave.php"><img whith="25" height="25" src="Imagenes/imagenes/cambiarclave.png">Cambiar Contraseña</a></li>
           </ul>
       </ul>
       <ul class="nav navbar-nav navbar-right">

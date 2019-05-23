@@ -132,14 +132,14 @@ $cod= ($_GET["cod"]);
       </div>
       <div class="collapse navbar-collapse" id='cssmenu' id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="Index.php">Inicio</a></li>
-          <li><a href="#">Consultas</a></li>
-          <li><a href="#">Reportes</a></li>
+        <li><a href="Index.php"> <img whith="30" height="30" src="Imagenes/img/inicio.jpg"></a></li>
+          <li><a href="consultas.php"><img whith="25" height="25" src="Imagenes/img/list.png"> Consulta</a></li>
+          <li><a href="#"><img whith="25" height="25" src="Imagenes/img/note.png">Reportes</a></li>
           <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img whith="25" height="25" src="Imagenes/img/usuario.png">Usuarios <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="crearusuario.php">Nuevo Usuario</a></li>
-            <li><a href="cambiarclave.php">Cambiar Contraseña</a></li>
+            <li><a href="crearusuario.php"><img whith="25" height="25" src="Imagenes/imagenes/crearusuario.png">Nuevo Usuario</a></li>
+            <li><a href="cambiarclave.php"><img whith="25" height="25" src="Imagenes/imagenes/cambiarclave.png">Cambiar Contraseña</a></li>
           </ul>
        </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -154,11 +154,12 @@ $cod= ($_GET["cod"]);
     <div class="row content">
       <div class="col-sm-2 sidenav">
         <div class="btn-group-vertical">
-          <a href="consultaEstudiantes.php" class="btn btn-success btn-lg">Estudiantes</a>
-          <a href="consultaEmpleados.php" class=" btn btn-success btn-lg">Empleados</a>
-          <a href="horarioprofesor.php" class=" btn btn-success btn-lg">Horarios</a>
-          <a href="consultaAsignaturas.php" class=" btn btn-success btn-lg">Asignaturas</a>
-          <a href="consultaAulas.php" class=" btn btn-success btn-lg">Aulas</a>
+        <a href="consultaEstudiantes.php" class="btn btn-success btn-lg" ><img width= "25" height="25" src="imagenes/imagenes/estudiante.png" >   Estudiantes</a>
+        <a href="consultaEmpleados.php" class=" btn btn-success btn-lg"><img width= "25" height="25" src="imagenes/imagenes/profesor.png" >     Empleados</a>
+        <a href="horarioprofesor.php" class=" btn btn-success btn-lg"><img width= "25" height="25" src="imagenes/img/clock.png" >     Horarios</a>
+        <a href="consultaAsignaturas.php" class=" btn btn-success btn-lg"><img width= "25" height="25" src="imagenes/img/Asignatura.png" >     Asignaturas</a>
+        <a href="consultaAulas.php" class=" btn btn-success btn-lg"><img width= "25" height="25" src="imagenes/img/aula.png" >     Aulas</a>
+
         </div>
       </div>
       <fieldset>
