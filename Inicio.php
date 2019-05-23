@@ -171,16 +171,12 @@ h1{
     <h2>Colegio Fuente del Saber</h2>
     <div class="content-all">
         <div class="content-carrousel">
-            <figure><img src="1.jpg" ></figure>
-            <figure><a title="Estudiantes" href="ConsultaEstudiantes.php"><img src="2.jpg"></a></figure>
-            <figure><img src="3.jpg" ></figure>
-            <figure><img src="4.jpg" ></figure>
-            <figure><img src="5.jpg" ></figure>
-            <figure><img src="6.jpg" ></figure>
-            <figure><img src="7.jpg" ></figure>
-            <figure><img src="8.jpg" ></figure>
-            <figure><img src="9.jpg" ></figure>
-            <figure><img src="10.jpg"></figure>
+            <figure><a title="Estudiantes" href="ConsultaEstudiantes.php"><img src="imagenes/img/estudiante.jpg"></a></figure>
+            <figure><a title="Empleados" href="ConsultaEmpleados.php"><img src="imagenes/img/empleados.jpg"></a></figure>
+            <figure><a title="Horario" href="horarioprofesor.php"><img src="imagenes/img/calendario.jpg"></a></figure>
+            <figure><a title="Asignaturas" href="ConsultaAsignaturas.php"><img src="imagenes/img/asignaturas.jpg"></a></figure>
+            <figure><a title="Aulas" href="ConsultaAulas.php"><img src="imagenes/img/Aulas.jpg"></a></figure>
+            
         </div>
 
     </div>
@@ -190,7 +186,7 @@ h1{
 
  
 
-
+ 
 
 <footer class="container-fluid text-center">
    <h3 class= "center"> Derechos de Autor 2019. Estudiantes de Informatica UASD </h3>

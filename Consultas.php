@@ -165,14 +165,14 @@ h1{
       </div>
       <div class="collapse navbar-collapse" id='cssmenu' id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="inicio.php">Inicio</a></li>
-          <li><a href="#">Consultas</a></li>
-          <li><a href="#">Reportes</a></li>
+          <li><a href="Index.php"><img width= "30" height="30" src="Imagenes/img/inicio.jpg" > </a></li>
+          <li class='has-sub'><a href="Consultas.php"><img width= "25" height="25" src="Imagenes/img/list.png" ><span>  Consultas</span></a>    </li>
+          <li><a href="#"><img width= "25" height="25" src="Imagenes/img/note.png" ><span>  Reporte</span></a></li>
           <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img width= "25" height="25" src="Imagenes/img/usuario.png" >Usuarios <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="crearusuario.php">Nuevo Usuario</a></li>
-            <li><a href="cambiarclave.php">Cambiar Contraseña</a></li>
+            <li><a href="crearusuario.php"><img width= "25" height="25" src="Imagenes/imagenes/crearusuario.png" > Nuevo Usuario</a></li>
+            <li><a href="cambiarclave.php"><img width= "25" height="25" src="Imagenes/imagenes/cambiarclave.png" > Cambiar Contraseña</a></li>
           </ul>
        </ul>
         <ul class="nav navbar-nav navbar-right">
