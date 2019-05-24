@@ -1,7 +1,18 @@
+<?php  session_start();
+
+if ($_SESSION["acceso"]!=1){
+  header("Location: iniciarsesion.php");
+}
+include("conexion.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>FUENTE DEL SABER</title>
+  <link rel="stylesheet" href="css/estilo.css">
   <link rel="shortcut icon" type="image/x-icon" href="imagenes/colegio.png" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,9 +38,11 @@
     
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
+    background:#000;
+	color:#aaa;
+	text-align:center;
+	font-size:10px;
+	padding:5px;
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -40,72 +53,61 @@
       }
       .row.content {height:auto;} 
     }
-
-    h2{
-      color:blue;
-    }
-    
-    h1{
-      color:yellow;
-      background-color:#555;
-    }
-
-    p{
-      line-height: 1.5; 
-      font-weight: bold;
-      font-style: Arial;
-      text-transform: capitalize; 
-      text-align:justify;
-    }
-  
-
   </style>
 
   <style>
-  h1 {
-  font-size: 40px;
-}
 
-h2 {
-  font-size: 36px;
-  text-align: center;
-  text-shadow: 3px 2px green;
-
-}
-
-h3 {
+  h3 {
   font-size: 12px;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  
+}
+
+div.desc {
+  padding: 15px;
   text-align: center;
 }
-
-
-p {
-  font-family: "Monospace", Mono, Monospace;
-}
-
-#rcorners3 {
-  border-radius: 15px 50px;
-  border:4px solid blue;
-  padding: 20px; 
-  width: justify;
-  height: justify;  
-  font-size: 24px;
-}
-
-Table
-{
- align: center;
- font-size: 100px;
- font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
- text-shadow: 3px 2px blue;
-
- }
-  </style>
+</style>
 </head>
-<body>
 
-  
+<style>
+.btn-group .button {
+  display: block; 
+}
+
+
+
+.desc{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-shadow: 2px 1px purple;
+   font-size: 25px;
+}
+h1{
+   
+   font-family: "Times New Roman", Times, serif;
+   text-shadow: 2px 1px purple; 
+   font-size: 50px;
+}
+ 
+
+</style>
+
+<body>
 <center>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -141,7 +143,6 @@ Table
               </div>
             </center>
 
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -167,42 +168,96 @@ Table
 </nav>
 
 
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-    </div>
-    <div class="col-sm-8 text-left"> 
-
-        <Table BORDER=2px blue>
-        <Tr><Td>
-        <MARQUEE> Colegio Fuente del Saber </MARQUEE>
-        </Td></Tr>
-        </Table>
-
-      <h1 class="container-fluid text-center">BIENVENIDOS</h1>
-      <h2>Misión</h2>
-      <p id= "rcorners3">Educar a niños, niñas y jóvenes para que logren su desarrollo integral en las dimensiones individual, social y trascendente,
-       que les facilite una inserción crítica, creativa y eficiente en la sociedad.</p>
-      <h2>Visión</h2>
-      <p id= "rcorners3">Ser un centro educativo reconocido por la   calidad y
-       la innovación en sus estrategias pedagógicas, el desarrollo   integral de sus estudiantes y las competencias de su personal docente.</p>
-      <h2>Valores</h2>
-      <p id= "rcorners3">-Promover aprendizajes de calidad en niños, niñas y jóvenes para favorecer su desarrollo integral.<br>
-        -Formar en los valores que se explicitan en el Evangelio.<br>
-        -Favorecer la inserción crítica del   alumnado y en la comunidad local, nacional e  internacional,
-         aportando   al desarrollo y transformación de la misma.<br>
-        -Facilitar la formación y actualización permanente del profesorado en las áreas de su especialidad.<br>
-        -Promover la integración escuela – familia para la educación del estudiantado.<br>
-        -Desarrollar la identidad personal y social de los y las estudiantes. </p>
-      <hr>
-    </div>
-  </div>
 </div>
+<center>
+
+<div class="container">
+  <form action="registros.php?pagina=12" method="POST" name="form1">
+
+  <div>
+
+    <label for="fname">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre..">
+</div>
+<div>
+    <label for="lname">Apellido</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Apellido..">
+</div>
+<div class="container">
+    <label for="country">Ciudad</label>
+    <select id="ciudad" name="ciudad">
+      <option value="San Francisco de Macoris">San Francisco de Macoris</option>
+      <option value="Nagua">Nagua</option>
+      <option value="Santiago">Santiago</option>
+      <option value="Santo Domingo">Santo Domingo</option>
+       <option value="Puerto Plata">Puerto Plata</option>
+      <option value="La Romana">La Romana</option>
+      <option value="Samana">Samana</option>
+      <option value="La Vega">La Vega</option>
+    </select>
+</div>
+<div>
+   <ul> <label for="subject">Comentrario</label></ul>
+   <ul> <textarea id="cometario" name="comentario" placeholder="Escriba su comentario aqui.." style="height:200px"></textarea></ul>
+
+</div> 
+    <input type="submit" value="Enviar">
+
+  </form>
+</div>
+  
+
+</div>
+
+</center>
+
 
 
 <footer class="container-fluid text-center">
    <h3 class= "center"> Derechos de Autor 2019. Estudiantes de Informatica UASD </h3>
 </footer>
+
+
+
+
+<style>
+    input[type=text], select, textarea {
+  width: 30%; 
+  padding: 12px;  
+  border: 2px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+  
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+
+</style>
+
 
 </body>
 </html>

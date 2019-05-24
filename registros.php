@@ -275,4 +275,25 @@ if ($pagina==11){
 	echo "<script> window.location='consultaAulas.php' </script>";
  }
 
+
+ //Comentario !!!
+if ($pagina==12){
+
+    $nombre=$_POST["nombre"];
+    $apellido=$_POST["apellido"];
+	$ciudad=$_POST["ciudad"];
+	$comentario=$_POST["comentario"];
+	$conexion->set_charset("utf8");
+
+	$sql = "INSERT INTO contacto (nombre, apellido, ciudad, comentario )  VALUES ('$nombre','$apellido','$ciudad','$comentario')";
+	$resultado = $conexion->query($sql);
+
+
+    echo "<script> alert('Guardado Exitosamente!!!') </script>";
+	echo "<script> window.location='Index.php' </script>";
+ }
+
+
+
+
 ?>

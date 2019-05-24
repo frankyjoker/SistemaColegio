@@ -107,7 +107,7 @@ if ($_SESSION["acceso"]!=1){
       </div>
       <div class="collapse navbar-collapse" id='cssmenu' id="myNavbar">
         <ul class="nav navbar-nav">
-        <li><a href="Index.php"> <img whith="30" height="30" src="Imagenes/img/inicio.jpg"></a></li>
+        <li><a href="inicio.php"> <img whith="30" height="30" src="Imagenes/img/inicio.jpg"></a></li>
           <li><a href="consultas.php"><img whith="25" height="25" src="Imagenes/img/list.png"> Consulta</a></li>
           <li><a href="#"><img whith="25" height="25" src="Imagenes/img/note.png">Reportes</a></li>
           <li class="dropdown">

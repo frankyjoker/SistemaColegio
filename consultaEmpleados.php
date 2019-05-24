@@ -110,7 +110,7 @@ if ($_SESSION["acceso"]!=1){
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="Index.php"><img width= "30" height="30" src="Imagenes/img/inicio.jpg" > </a></li>
+        <li><a href="inicio.php"><img width= "30" height="30" src="Imagenes/img/inicio.jpg" > </a></li>
           <li class='has-sub'><a href="Consultas.php"><img width= "25" height="25" src="Imagenes/img/list.png" ><span>  Consultas</span></a>    </li>
           <li><a href="#"><img width= "25" height="25" src="Imagenes/img/note.png" ><span>  Reporte</span></a></li>
           <li class="dropdown">
