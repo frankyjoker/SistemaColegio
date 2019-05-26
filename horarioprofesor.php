@@ -20,10 +20,10 @@ if ($_SESSION["acceso"]!=1){
 <?php
 
 
+
 $cod= ($_GET["cod"]);
 
  if ($cod > 0){
-  
  $sql1 = "SELECT * FROM horariosemestral where codigo =".$cod;
   $resultado1 = $conexion->query( $sql1);
 
@@ -34,6 +34,7 @@ $cod= ($_GET["cod"]);
     $codigoprofesor= $row1['codigoprofesor'];
     $anioescolar= $row1['anioescolar'];
     
+  
   }
 }
 
